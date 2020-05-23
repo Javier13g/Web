@@ -1,0 +1,9 @@
+.foto
+{
+    width: 400px;
+    height: 400px;
+    float: center;
+    display:block;
+    margin:auto;
+    border-radius: 50%;
+}
