@@ -2,7 +2,9 @@
 
 body
 {
-    background-color: yellow;
+    /*background-color: rgb(175, 175, 228);*/
+    background-image: url("https://images8.alphacoders.com/692/thumb-1920-692800.jpg");
+    background-size: auto;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6em; 
     margin: 0;   
@@ -17,8 +19,8 @@ body
 
 .header
 {
-    background: #333;
-    color: white;
+    /*background: #333;
+    color: white;*/
     padding: 2em 0;
 
     position: fixed;
@@ -131,7 +133,7 @@ body
 }
  /*CSS TABLA CONTACTOS*/
 
- .tabla-pokemon{
+ /*.tabla-pokemon{
     margin: 0 auto;
     width: 600px;
     margin-top: 2rem;
@@ -171,6 +173,6 @@ tr:hover td{
 
 #bot
 {
-    margin-left: 3rem;
+    margin-left: 1rem;
     margin-right: 5rem;
-}
+}*/
