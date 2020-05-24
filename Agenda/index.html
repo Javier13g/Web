@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css"/>
     <script src="Js/index.js"></script>
 </head>
@@ -26,21 +26,43 @@
     </header>
     
     <div class="hola">
-        <button type="button" class="btn btn-success">Agregar contacto</button>
+        <h2>REGISTRO DE CONTACTOS</h2>
+        <button onclick="agregarContacto();" type="button" class="btn btn-success">Agregar contacto</button>
     </div>
 
-    <div>
+    <div id="divFormulario" style="display: none;">
         <form class="form-registrer">
-            <legend>REGISTRA EL CONTACTO DESEADO</legend>
             <input class="controls" type="text" name="Nombre" placeholder="Ingresar su nombre">
             <input class="controls" type="text" name="Apellido" placeholder="Ingresar su apellido">
             <input class="controls" type="text" name="Telefono" placeholder="Ingresar su telefono">
             <input class="botons" type="submit" value="Guardar">
         </form>
     </div>
+    <div class="tabla-pokemon">
+		<table>
+			<thead>
+				<tr>
+					<h4 class="bueno">Contactos Existentes</h4>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Telefono</th>
+				</tr>
+			</thead>
+			<tbody id="datos">
 
-    <fieldset class="list">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a class="btn btn-success" href="">Editar</a><a class="btn btn-danger" href="">Borrar</a></td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    <!--<fieldset class="list"> 
         <legend class="list2">Contactos Existentes</legend>
-    </fieldset>
+    </fieldset> -->
 </body>
 </html>

@@ -73,14 +73,15 @@ body
 
 .hola
 {
-    margin-top: 10rem;
+    margin-top: 14rem;
+    text-align: center;
 }
 
 .list
 {
     margin: 0 auto;
     padding-top: 8rem;
-    width: 75%;
+    width: 85%;
 }
 
 .list2
@@ -127,4 +128,42 @@ body
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+ /*CSS TABLA CONTACTOS*/
+
+ .tabla-pokemon{
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 2rem;
+}
+
+.tabla-pokemon .bueno{
+    text-align: center;
+}
+
+table{
+    background-color: white;
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 20px;
+}
+
+thead{
+    background-color: #24303c;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:ntn-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #369681;
+    color: white;
 }
