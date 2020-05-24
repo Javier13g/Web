@@ -151,6 +151,7 @@ table{
 th, td{
     border: solid 1px black;
     padding: 20px;
+    text-align: center;
 }
 
 thead{
@@ -166,4 +167,10 @@ tr:ntn-child(even){
 tr:hover td{
     background-color: #369681;
     color: white;
+}
+
+#bot
+{
+    margin-left: 3rem;
+    margin-right: 5rem;
 }
