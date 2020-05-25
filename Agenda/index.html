@@ -7,8 +7,8 @@
     <link rel="icon" type="image/ico" href="descargar.ico" />
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css"/>
     <script src="Js/index.js"></script>
 </head>
@@ -28,16 +28,16 @@
     
     <div class="hola">
         <h2>REGISTRO DE CONTACTOS</h2>
-        <button onclick="agregarContacto();" type="button" class="btn btn-success">Agregar contacto</button>
-        <button onclick="mostrarContactos();" type="button" class="btn btn-primary">Actualizar Contacto</button>
+        <button onclick="agregarContacto();" class="btn btn-success">Agregar contacto</button>
+        <button onclick="mostrarContactos();" class="btn btn-primary">Actualizar Contacto</button>
     </div>
 
-    <div id="divFormulario" style="display: none;">
+    <div id="divFormulario" style="display:none;">
         <form class="form-registrer">
             <input class="controls" type="text" id="txtNombre" placeholder="Ingresar su nombre">
             <input class="controls" type="text" id="txtApellido" placeholder="Ingresar su apellido">
             <input class="controls" type="text" id="txtTelefono" placeholder="Ingresar su telefono">
-            <input onclick="guardar();" class="botons" type="submit" value="Guardar">
+            <button onclick="guardar();" class="botons" >Guardar</button>
         </form>
     </div>
     <div class="tabla-pokemon">

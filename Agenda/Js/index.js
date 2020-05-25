@@ -1,41 +1,39 @@
+
 //VARIABLE QUE ALMACENA LAS INSTANCIAS DE CONTACTOS
 var contactos = new Array();
 //ESTO DEFINE EL OBJETO CONTACTO CON SUS RESPECTIVAS PROPIEDADES
 function contacto() 
 {
-    this.nombre ="";
+    this.nombre = "";
     this.apellido = "";
     this.telefono = "";
 }
 
-con = new contacto();
-con.nombre
-
 //FUNCION PARA ABREVIAR document.getElementByID
-function gi(id) 
+/*function gi(id) 
 {
     return document.getElementById(id);
-}
+} */
 //FUNCION QUE MUESTRA EL FORMULARIO PARA PODER AGREGAR
 function agregarContacto() 
 {
-    gi("divFormulario").style.display='inline';
+    document.getElementById("divFormulario").style.display='inline';
 }
 //FUNCION QUE OCULTA EL FORMULARIO
 function ocultarForm() 
 {
-    gi('txtNombre').value = '';
-    gi('txtApellido').value = '';
-    gi('txtTelefono').value = '';
-    gi("divFormulario").style.display='none';  
+    document.getElementById('txtNombre').value = '';
+    document.getElementById('txtApellido').value = '';
+    document.getElementById('txtTelefono').value = '';
+    document.getElementById("divFormulario").style.display='none';  
 }
 //FUNCION QUE GUARDA LOS DATOS Y AL TERMINAR OCULTA EL FORMULARIO
 function guardar() 
 {
     con = new contacto();
-    con.nombre = gi('txtNombre').value;
-    con.apellido = gi('txtApellido').value;
-    con.telefono = gi('txtTelefono').value;
+    con.nombre = document.getElementById('txtNombre').value;
+    con.apellido = document.getElementById('txtApellido').value;
+    con.telefono = document.getElementById('txtTelefono').value;
     contactos[contactos.length] = con;
     ocultarForm();
     mostrarContactos();
@@ -43,6 +41,7 @@ function guardar()
 
 function mostrarContactos() 
 {
+    alert("contacto registrado")
     for(x=0; x<contactos.length; x++) 
     {
         con = contactos[x];
@@ -52,6 +51,6 @@ function mostrarContactos()
         con.nombre+"<br/>"+
         con.apellido+"<br/>"+
         con.telefono+"<br/>";
-        gi('todosLosContactos').appendChild(div);
+        document.getElementById('todosLosContactos').appendChild(div);
     }    
-}
+} 
