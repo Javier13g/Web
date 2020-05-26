@@ -1,4 +1,28 @@
+function addCon()
+{
+    var todo = document.getElementsByName("entrada");
+    var contacto = todo.value;
 
+    var InputtxtTipoContacto = document.getElementById("txtTipoContacto");
+    var tipo = InputtxtTipoContacto.value;
+    /*var InputtxtNombre = document.getElementById("txtNombre");
+    var nombre = InputtxtNombre.value
+
+    var InputtxtApellido = document.getElementById("txtApellido");
+    var apellido = InputtxtApellido.value
+
+    var InputtxtTelefono = document.getElementById("txtTelefono");
+    var telefono = InputtxtTelefono.value*/
+
+    console.log(contacto);
+    console.log(tipo);
+   
+}
+function agregarContacto() 
+{
+    document.getElementById("divFormulario").style.display='inline';
+}
+/*
 //VARIABLE QUE ALMACENA LAS INSTANCIAS DE CONTACTOS
 var contactos = new Array();
 //ESTO DEFINE EL OBJETO CONTACTO CON SUS RESPECTIVAS PROPIEDADES
@@ -9,11 +33,7 @@ function contacto()
     this.telefono = "";
 }
 
-//FUNCION PARA ABREVIAR document.getElementByID
-/*function gi(id) 
-{
-    return document.getElementById(id);
-} */
+
 //FUNCION QUE MUESTRA EL FORMULARIO PARA PODER AGREGAR
 function agregarContacto() 
 {
@@ -54,3 +74,4 @@ function mostrarContactos()
         document.getElementById('todosLosContactos').appendChild(div);
     }    
 } 
+*/
