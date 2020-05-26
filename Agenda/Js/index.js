@@ -1,21 +1,24 @@
+
 function addCon()
 {
-    var todo = document.getElementsByName("entrada");
-    var contacto = todo.value;
-
+ 
     var InputtxtTipoContacto = document.getElementById("txtTipoContacto");
     var tipo = InputtxtTipoContacto.value;
-    /*var InputtxtNombre = document.getElementById("txtNombre");
+    
+    var InputtxtNombre = document.getElementById("txtNombre");
     var nombre = InputtxtNombre.value
 
     var InputtxtApellido = document.getElementById("txtApellido");
     var apellido = InputtxtApellido.value
 
     var InputtxtTelefono = document.getElementById("txtTelefono");
-    var telefono = InputtxtTelefono.value*/
+    var telefono = InputtxtTelefono.value
 
-    console.log(contacto);
-    console.log(tipo);
+    alert(nombre);
+    console.log(nombre);
+    alert(apellido);
+    alert(telefono);
+    alert(tipo);
    
 }
 function agregarContacto() 
