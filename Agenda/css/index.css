@@ -82,14 +82,37 @@ body
 .list
 {
     margin: 0 auto;
-    padding-top: 8rem;
+    padding-top: 2rem;
     width: 85%;
 }
 
 .list2
 {
     text-align: center;
+    
 }
+
+#todosLosContactos div
+{
+    float: left;
+    width: 210px;
+    height: 100px;
+    background: #24303c;
+    margin: 5px;
+    border-radius: 4px;
+    border: 2px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+#botones
+{
+    margin: 3px;
+}
+
 
 /*CSS FORMULARIO*/
 .form-registrer{
@@ -130,12 +153,6 @@ body
     color: white;
     margin: 16px 0;
     font-size: 16px;
-}
-
-.row
-{
-    padding-bottom: 3rem;
-    padding: 2rem;
 }
 
 

@@ -29,28 +29,28 @@
     
     <div class="hola">
         <h2>REGISTRO DE CONTACTOS</h2>
-        <button onclick="agregarContacto();" class="btn btn-success">Agregar contacto</button>
-        <button onclick="" class="btn btn-primary">Actualizar Contacto</button>
+        <button onclick="agregarContacto();" class="btn btn-primary">Agregar contacto</button>
+        <button onclick="mostrarContactos();" class="btn btn-secondary">Actualizar contacto</button>
     </div>
 
     <div id="divFormulario" style="display:none;">
-        <form class="form-registrer">
+        <div class="form-registrer">
             <input class="controls" type="text"  id="txtNombre" placeholder="Ingresar nombre">
             <input class="controls" type="text"  id="txtApellido" placeholder="Ingresar apellido">
             <input class="controls" type="text"  id="txtTelefono" placeholder="Ingresar telefono">
             <label for="txtTipoContacto">Tipo de telefono</label>
             <select class="controls" id="txtTipoContacto">
                 <option value="">Selecciona el tipo de telefono</option>
-                <option value="L">Laboral</option>
-                <option value="P">Personal</option>
-                <option value="A">Academico</option>
+                <option value="Laboral">Laboral</option>
+                <option value="Personal">Personal</option>
+                <option value="Academico">Academico</option>
             </select>
-            <button onclick="addCon();" type="submit" class="botons" >Guardar</button>
-        </form>
+            <button onclick="guardar();" class="botons" >Guardar</button>
+        </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4" id="1">
+   <!-- <div class="row">
+        <div class="col-md-3" id="1">
             <div class="card">
                 <div class="bg-danger text-light card-header">
                     Laboral
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4" id="2">
+        <div class="col-md-3" id="2">
             <div class="card">
                 <div class="bg-warning text-light card-header">
                     Personal
@@ -69,7 +69,7 @@
 
                 </div>
         </div>
-        <div class="col-md-4-esooo" id="3">
+        <div class="col-md-4" id="3">
             <div class="card">
                 <div class="bg-success text-light card-header">
                     Academico
@@ -78,7 +78,7 @@
 
                 </div>
         </div>
-    </div>
+    </div> -->
     <!--<div class="tabla-pokemon">
 		<table>
 			<thead>
@@ -101,14 +101,13 @@
 				</tr>
 			</tbody>
 		</table> 
-	</div>
+	</div> -->
 
     <fieldset class="list"> 
         <legend class="list2">Contactos Existentes</legend>
         <div id="todosLosContactos">
-
         </div>
-    </fieldset> -->
+    </fieldset>
     
 </body>
 </html>
