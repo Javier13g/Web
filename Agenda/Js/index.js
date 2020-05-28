@@ -23,6 +23,11 @@
 
 //VARIABLE QUE ALMACENA LAS INSTANCIAS DE CONTACTOS
 var contactos = new Array();
+
+function gi (id)
+{
+    return document.getElementById(id);
+}
 //ESTO DEFINE EL OBJETO CONTACTO CON SUS RESPECTIVAS PROPIEDADES
 function contacto() 
 {
@@ -35,26 +40,26 @@ function contacto()
 //FUNCION QUE MUESTRA EL FORMULARIO PARA PODER AGREGAR
 function agregarContacto() 
 {
-    document.getElementById("divFormulario").style.display='inline';
-    document.getElementById('txtNombre').focus();
+    gi("divFormulario").style.display='inline';
+    gi('txtNombre').focus();
 }
 //FUNCION QUE OCULTA EL FORMULARIO
 function ocultarForm() 
 {
-    document.getElementById('txtNombre').value = '';
-    document.getElementById('txtApellido').value = '';
-    document.getElementById('txtTelefono').value = '';
-    document.getElementById('txtTipoContacto')
-    document.getElementById("divFormulario").style.display='none';  
+    gi('txtNombre').value = '';
+    gi('txtApellido').value = '';
+    gi('txtTelefono').value = '';
+    gi('txtTipoContacto')
+    gi("divFormulario").style.display='none';  
 }
 //FUNCION QUE GUARDA LOS DATOS Y AL TERMINAR OCULTA EL FORMULARIO
 function guardar() 
 {
     con = new contacto();
-    con.nombre = document.getElementById('txtNombre').value;
-    con.apellido = document.getElementById('txtApellido').value;
-    con.telefono = document.getElementById('txtTelefono').value;
-    con.tipoTelefono = document.getElementById('txtTipoContacto').value;
+    con.nombre = gi('txtNombre').value;
+    con.apellido = gi('txtApellido').value;
+    con.telefono = gi('txtTelefono').value;
+    con.tipoTelefono = gi('txtTipoContacto').value;
     contactos[contactos.length] = con; 
     ocultarForm();
     mostrarContactos();
@@ -62,8 +67,10 @@ function guardar()
 
 function eliminarContacto(id_contacto)
 {
-    if(confirm("Quiere eliminar el contacto?"))
+    
+   if(confirm("Quiere eliminar el contacto?"))
     {
+        var id_contacto = document.getElementById('txtNombre')
         newCon = new Array();
         for(x=0; x<contactos.length; x++)
         {
@@ -89,6 +96,6 @@ function mostrarContactos()
         "Tipo de contacto: "+ con.tipoTelefono + "<br/>"+
         "Telefono: "+ con.telefono + "<br/>"+
         "<button onclick='editarContacto("+x+")' class='btn btn-primary' id='botones'>Editar</button><button onclick='eliminarContacto("+x+")' class='btn btn-warning' id='botones'>Eliminar</button>";
-        document.getElementById('todosLosContactos').appendChild(div);
+        gi('todosLosContactos').appendChild(div);
     }
 } 
