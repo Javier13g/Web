@@ -4,7 +4,8 @@ body
 {
     /*background-color: rgb(175, 175, 228);*/
     background-image: url("https://images8.alphacoders.com/692/thumb-1920-692800.jpg");
-    background-size: auto;
+    background-size: center center;
+    background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6em; 
     margin: 0;   
