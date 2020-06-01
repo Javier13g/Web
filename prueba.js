@@ -71,6 +71,7 @@ function calcular_edad(dia_naci,mes_nacim,año_naci)
 
 //TEST POSITIVOS
 console.log(calcular_edad(13,9,2000))
+console.log(calcular_edad(12,8,1997))
 
 //TEST NEGATIVOS
 console.log(calcular_edad('A',9,2000))
