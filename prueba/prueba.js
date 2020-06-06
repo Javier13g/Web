@@ -1,6 +1,6 @@
 
 
-function primo (n)
+function primo (n)  //FUNCION QUE TE DICE SI UN NUMERO ES PRIMO O NO 
 {
   if (typeof(n)=== 'string')
     {
@@ -20,17 +20,17 @@ function primo (n)
     }
 }
 
-//TEST POSITIVOS
+//TEST POSITIVOS DE LA FUNCION PRIMO
 console.log(primo(3))
 console.log(primo(100))
 console.log(primo(25))
 
-//TEST NEGATIVOS
+//TEST NEGATIVOS DE LA FUNCION PRIMO
 console.log(primo('a'))
 console.log(primo('Abdiel'))
 console.log(primo('RD'))
 
-//FUNCION QUE CALCULA LA EDAD 
+//FUNCION QUE CALCULA LA EDAD SEGUN TU FECHA DE NACIMIENTO
 function calcular_edad(dia_naci,mes_nacim,año_naci)
 {
     fechaActual = new Date();  //fecha_hoy
@@ -69,11 +69,11 @@ function calcular_edad(dia_naci,mes_nacim,año_naci)
   return edad + " años";
 }
 
-//TEST POSITIVOS
+//TEST POSITIVOS DE LA FUNCION CALCULAR EDAD 
 console.log(calcular_edad(13,9,2000))
 console.log(calcular_edad(12,8,1997))
 
-//TEST NEGATIVOS
+//TEST NEGATIVOS DE LA FUNCION CALCULAR EDAD 
 console.log(calcular_edad('A',9,2000))
 console.log(calcular_edad(10,'B',2000))
 console.log(calcular_edad('A',9,'C'))
