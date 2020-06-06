@@ -33,13 +33,13 @@
         <!--<button onclick="mostrarContactos();" class="btn btn-secondary">Actualizar contacto</button>-->
     </div>
 
-    <div id="divFormulario" style="display:none;">
+    <form id="divFormulario" style="display:none;">
         <div class="form-registrer">
-            <input class="controls" type="text"  id="txtNombre" placeholder="Ingresar nombre">
-            <input class="controls" type="text"  id="txtApellido" placeholder="Ingresar apellido">
-            <input class="controls" type="text"  id="txtTelefono" placeholder="Ingresar telefono">
+            <input class="controls" type="text" name="NOMBRE"  id="txtNombre" placeholder="Ingresar nombre" required="">
+            <input class="controls" type="text" name="APELLIDO"  id="txtApellido" placeholder="Ingresar apellido" required="">
+            <input class="controls" type="text" name="TELEFONO"  id="txtTelefono" placeholder="Ingresar telefono">
             <label for="txtTipoContacto">Tipo de telefono</label>
-            <select class="controls" id="txtTipoContacto">
+            <select class="controls" id="txtTipoContacto" name="OPCION">
                 <option value="">Selecciona el tipo de telefono</option>
                 <option value="Laboral">Laboral</option>
                 <option value="Personal">Personal</option>
@@ -47,7 +47,7 @@
             </select>
             <button onclick="guardar();" class="botons" >Guardar</button>
         </div>
-    </div>
+    </form>
 
    <!-- <div class="row">
         <div class="col-md-3" id="1">

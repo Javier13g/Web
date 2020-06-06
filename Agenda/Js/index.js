@@ -53,35 +53,22 @@ function ocultarForm()
     gi("divFormulario").style.display='none';  
 }
 //FUNCION QUE GUARDA LOS DATOS Y AL TERMINAR OCULTA EL FORMULARIO
-function guardar() 
+ function guardar() 
 {
+
     con = new contacto();
     con.nombre = gi('txtNombre').value;
     con.apellido = gi('txtApellido').value;
     con.telefono = gi('txtTelefono').value;
     con.tipoTelefono = gi('txtTipoContacto').value;
-    contactos[contactos.length] = con; 
+    contactos[contactos.length] = con;
+
     ocultarForm();
     mostrarContactos();
 }
 
-function eliminarContacto(id_contacto)
-{
-    
-   if(confirm("Quiere eliminar el contacto?"))
-    {
-        var id_contacto = document.getElementById('txtNombre')
-        newCon = new Array();
-        for(x =0; x<contactos.length; x--)
-        {
-            if(x != id_contacto)
-            {
-                newCon[newCon.length] = contactos[x];
-            }
-        }
-        contactos = newCon;
-    }
-}
+
+
 //FUNCION QUE MUESTRA LOS CONTACTOS
 function mostrarContactos() 
 {
