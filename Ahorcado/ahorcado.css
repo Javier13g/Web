@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
+body
+{
+    background-color: yellow;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6em; 
+    margin: 0;   
+}
+
+h2
+{
+    line-height: 1.0em;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: auto;
+}
+
+.foto
+{
+    width: 280px;
+    height: 280px;
+    float: center;
+    display:block;
+    margin:auto;
+    border-radius: 50%;
+}
+
+.foto2
+{
+    width: 720px;
+    height: 300px;
+    float: center;
+    display:block;
+    margin:auto;
+    border-radius: 10%;
+}
+
+.container 
+{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+.header
+{
+    background: #333;
+    color: white;
+    padding: 2em 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+#ichigo
+{
+    width: 40px;
+}
+#ichigo2
+{
+    width: 100px;
+    margin-top: 100px;
+}
+
+.navigation ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.navigation ul li
+{
+    display: inline-block;
+}
+
+.navigation ul li a
+{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+}
+
+.navigation ul li a:hover 
+{
+    background: aquamarine;
+    border-radius: 50%;
+}
+#cuadro
+{
+    resize: none;
+    width: 280px;
+    height: 200px;
+    font-size: 20px;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 16px;
+    color: white;
+}
+
+#tabla1
+{
+    position: relative;
+    left: 120px;
+}
+
+#tabla2
+{
+    position: relative;
+    left: 270px;
+}
+
+#tabla3
+{
+    position: relative;
+    left: 270px;
+}
+
+#tabla4
+{
+    position: relative;
+    left: 270px;
+}
+
+#tabla5
+{
+    position: relative;
+    left: 270px;
+}
+
+#tabla6
+{
+    position: relative;
+    left: 270px;
+}
+
+
+
+#controls
+{
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 16px;
+    color: white;
+}
+
