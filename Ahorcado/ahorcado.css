@@ -7,6 +7,12 @@ body
     margin: 0;   
 }
 
+p
+{
+    margin-top: 10rem;
+    margin-bottom: 1.6em;
+}
+
 h2
 {
     line-height: 1.0em;
@@ -176,3 +182,17 @@ h2
     color: white;
 }
 
+#ayuda
+{
+    text-align: center;
+}
+
+#tituloa
+{
+    margin-bottom: 1rem;
+}
+
+#naruto
+{
+    width: 600px;
+}
