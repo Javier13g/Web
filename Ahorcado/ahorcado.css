@@ -80,8 +80,10 @@ h2
 }
 #ichigo2
 {
-    width: 100px;
-    margin-top: 100px;
+    width: 710px;
+    top: 117px;
+    position: absolute;
+    margin-bottom: 0;
 }
 
 .navigation ul

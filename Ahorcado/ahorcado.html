@@ -27,7 +27,10 @@
 			</nav>
 		</div>	
   </header>
-  <img src="giphy2.gif" id="ichigo2">
+  <div>
+    <img src="giphy2.gif" id="ichigo2">
+  </div>
+  
   <form id="ahorcado" name="visor" class="container">
     <h2>El Ahorcado</h2> 
     <table id="tabla1">
@@ -44,56 +47,56 @@
 
     <table id="tabla2">
       <tr>
-        <td width=50><input id="controls" type=button name=botA value=" A " onClick="Juega(this.form, 'a')"></td>
-        <td width=50><input id="controls" type=button name=botB value=" B " onClick="Juega(this.form, 'b')"></td>
-        <td width=50><input id="controls" type=button name=botC value=" C " onClick="Juega(this.form, 'c')"></td>
-        <td width=50><input id="controls" type=button name=botD value=" D " onClick="Juega(this.form, 'd')"></td>
-        <td width=50><input id="controls" type=button name=botE value=" E " onClick="Juega(this.form, 'e')"></td>
-        <td width=50><input id="controls" type=button name=botF value=" F " onClick="Juega(this.form, 'f')"></td>
+        <td width=50><input id="controls" type=button name=botA value=" A " onClick="JugandoLaVaina(this.form, 'a')"></td>
+        <td width=50><input id="controls" type=button name=botB value=" B " onClick="JugandoLaVaina(this.form, 'b')"></td>
+        <td width=50><input id="controls" type=button name=botC value=" C " onClick="JugandoLaVaina(this.form, 'c')"></td>
+        <td width=50><input id="controls" type=button name=botD value=" D " onClick="JugandoLaVaina(this.form, 'd')"></td>
+        <td width=50><input id="controls" type=button name=botE value=" E " onClick="JugandoLaVaina(this.form, 'e')"></td>
+        <td width=50><input id="controls" type=button name=botF value=" F " onClick="JugandoLaVaina(this.form, 'f')"></td>
       </tr>
     </table>
 
     <table id="tabla3">
       <tr>
-        <td ><input id="controls" type=button name=botG value=" G " onClick="Juega(this.form, 'g')"></td>
-        <td ><input id="controls" type=button name=botH value=" H " onClick="Juega(this.form, 'h')"></td>
-        <td ><input id="controls" type=button name=botI value=" I " onClick="Juega(this.form, 'i')"></td>
-        <td ><input id="controls" type=button name=botJ value=" J " onClick="Juega(this.form, 'j')"></td>
-        <td ><input id="controls" type=button name=botK value=" K " onClick="Juega(this.form, 'k')"></td>
-        <td ><input id="controls" type=button name=botL value=" L " onClick="Juega(this.form, 'l')"></td>
+        <td ><input id="controls" type=button name=botG value=" G " onClick="JugandoLaVaina(this.form, 'g')"></td>
+        <td ><input id="controls" type=button name=botH value=" H " onClick="JugandoLaVaina(this.form, 'h')"></td>
+        <td ><input id="controls" type=button name=botI value=" I " onClick="JugandoLaVaina(this.form, 'i')"></td>
+        <td ><input id="controls" type=button name=botJ value=" J " onClick="JugandoLaVaina(this.form, 'j')"></td>
+        <td ><input id="controls" type=button name=botK value=" K " onClick="JugandoLaVaina(this.form, 'k')"></td>
+        <td ><input id="controls" type=button name=botL value=" L " onClick="JugandoLaVaina(this.form, 'l')"></td>
         <td valign=middle id="controls">Ganadas: <input id="controls" type=text name=ganadas size=4 value=0 id="INTENTO"></td>
       </tr>
     </table>
 
     <table id="tabla4">
       <tr>
-        <td align=center><input  id="controls" type=button name=botM value=" M " onClick="Juega(this.form, 'm')"></td>
-        <td align=center><input id="controls" type=button name=botN value=" N " onClick="Juega(this.form, 'n')"></td>
-        <td align=center><input id="controls" type=button name=botÑ value=" Ñ " onClick="Juega(this.form, 'ñ')"></td>
-        <td align=center><input id="controls" type=button name=botO value=" O " onClick="Juega(this.form, 'o')"></td>
-        <td align=center><input id="controls" type=button name=botP value=" P " onClick="Juega(this.form, 'p')"></td>
-        <td align=center><input id="controls" type=button name=botQ value=" Q " onClick="Juega(this.form, 'q')"></td>
+        <td align=center><input  id="controls" type=button name=botM value=" M " onClick="JugandoLaVaina(this.form, 'm')"></td>
+        <td align=center><input id="controls" type=button name=botN value=" N " onClick="JugandoLaVaina(this.form, 'n')"></td>
+        <td align=center><input id="controls" type=button name=botÑ value=" Ñ " onClick="JugandoLaVaina(this.form, 'ñ')"></td>
+        <td align=center><input id="controls" type=button name=botO value=" O " onClick="JugandoLaVaina(this.form, 'o')"></td>
+        <td align=center><input id="controls" type=button name=botP value=" P " onClick="JugandoLaVaina(this.form, 'p')"></td>
+        <td align=center><input id="controls" type=button name=botQ value=" Q " onClick="JugandoLaVaina(this.form, 'q')"></td>
         <td align=right valign=middle  id="controls">Perdidas: <input  id="controls" type=text name=perdidas size=4 value=0></td>
       </tr>
     </table>
 
     <table id="tabla5">
       <tr>
-        <td align=center ><input  id="controls" type=button name=botR value=" R " onClick="Juega(this.form, 'r')"></td>
-        <td align=center><input id="controls" type=button name=botS value=" S " onClick="Juega(this.form, 's')"></td>
-        <td align=center><input id="controls" type=button name=botT value=" T " onClick="Juega(this.form, 't')"></td>
-        <td align=center><input id="controls" type=button name=botU value=" U " onClick="Juega(this.form, 'u')"></td>
-        <td align=center><input id="controls" type=button name=botV value=" V " onClick="Juega(this.form, 'v')"></td>
-        <td align=center><input id="controls" type=button name=botW value=" W " onClick="Juega(this.form, 'w')"></td>
+        <td align=center ><input  id="controls" type=button name=botR value=" R " onClick="JugandoLaVaina(this.form, 'r')"></td>
+        <td align=center><input id="controls" type=button name=botS value=" S " onClick="JugandoLaVaina(this.form, 's')"></td>
+        <td align=center><input id="controls" type=button name=botT value=" T " onClick="JugandoLaVaina(this.form, 't')"></td>
+        <td align=center><input id="controls" type=button name=botU value=" U " onClick="JugandoLaVaina(this.form, 'u')"></td>
+        <td align=center><input id="controls" type=button name=botV value=" V " onClick="JugandoLaVaina(this.form, 'v')"></td>
+        <td align=center><input id="controls" type=button name=botW value=" W " onClick="JugandoLaVaina(this.form, 'w')"></td>
       </tr>
     </table>
 
     <table id="tabla6">
       <tr>
-        <td align=center><input id="controls" type=button name=botX value=" X " onClick="Juega(this.form, 'x')"></td>
-        <td align=center><input id="controls" type=button name=botY value=" Y " onClick="Juega(this.form, 'y')"></td>
-        <td align=center><input id="controls" type=button name=botZ value=" Z " onClick="Juega(this.form, 'z')"></td>
-        <td colspan=3 align=center><input id="controls" type=button name=Inicia value="  Juego nuevo   " onClick="IniciaJuego(this.form)"></td>
+        <td align=center><input id="controls" type=button name=botX value=" X " onClick="JugandoLaVaina(this.form, 'x')"></td>
+        <td align=center><input id="controls" type=button name=botY value=" Y " onClick="JugandoLaVaina(this.form, 'y')"></td>
+        <td align=center><input id="controls" type=button name=botZ value=" Z " onClick="JugandoLaVaina(this.form, 'z')"></td>
+        <td colspan=3 align=center><input id="controls" type=button name=Inicia value="  Juego nuevo   " onClick="IniciandoJuegoAhorcado(this.form)"></td>
         <td align="center"><input id="controls" type=button value=Limpiar name=B1 onClick="this.form.ganadas.value='0'; this.form.perdidas.value='0'"></td>
       </tr>
     </table>

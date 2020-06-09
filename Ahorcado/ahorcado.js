@@ -1,30 +1,35 @@
-var hombre = new Array("___\n", "   |\n", "   O\n", "  /", "|", "\\\n", "  /", " \\\n", "___")
+var hombrePalito = new Array("O", "  /", "|", "\\\n", "  /", " \\\n")
+/*var hombrePalito = new Array("___\n", "   |\n", "   O\n", "  /", "|", "\\\n", "  /", " \\\n", "___")*/
 var palabra
-var libreriaPalabras = new Array("a r r a y", "v a r i a b l e", "s t r i n g", "p a r s e", "i n t",
+var listica = new Array("a r r a y", "v a r i a b l e", "s t r i n g", "p a r s e", "i n t",
  " a l g o r i t m o", "j a v a", "a c o p l a m i e n t o", "a n a l i s i s", "a p l i c a c i o n", 
- "a r g u m e n t o", "v e c t o r", "a s o c i a c i o n" )
-console.log(libreriaPalabras)
-var partes = 0
+ "a r g u m e n t o", "v e c t o r", "a s o c i a c i o n", "c o m p i l a d o r", "p o o", "p a r a d i g m a"
+ , "h t m l", "c s s", "j a v a s c r i p t", "i p", "m u l t i p l a t a f o r m a", "l i b r e r i a"
+ , "s c r i p t", "c o n s t a n t e", "a p i", "d i a g r a m a", "c l a s e", "h e r e n c i a", "o b j e t o",
+  "d e p u r a d o r", "m e t o d o", "e v e n t o", "a t r i b u t o", "m e n s a j e", "i d", "b r e a k p o i n t",
+   "b u g", "d o m", "h o s t", "f r a m e w o r k", "l o g", "s q l", "o p e r a d o r", "p r o g r a m a", 
+   "l i n u x", "d e b i a n", "u b u n t u", "p r o g r a m a d o r", "p c", "l a p t o p" )
+console.log(listica)
+var partesMuñeco = 0
 var colNueva = 0
 var jugando
 
-function ObtienePalabra() 
+function ObtienePalabra()    // funcion que obtiene la palabra que el usuario tendra que adivinar
 {
-   //obtiene la palabra para jugar de forma pseudoaleatoria
-   var indice = Math.round ( Math.random() * 9 )
-   var cadena = new String( libreriaPalabras[indice] )
+   var indice = Math.round ( Math.random() * 50 )
+   var cadena = new String( listica[indice] )
    palabra = cadena.split(" ")
 }
 
-function DibujaHombre(visor, partes)
+function DibujaHombrePalo(visor, partesMuñeco) // funcion que permite representar al muñequito
 {
-   //dibuja el hombre ahorcado
+   
    //partes indica el numero de partes a dibujar
    var dibujo = ""
-   if (partes < 10)
-   for(var x = 0; x < partes; x++)
+   if (partesMuñeco < 6)
+   for(var x = 0; x < partesMuñeco; x++)
    {
-      dibujo += hombre[x]
+      dibujo += hombrePalito[x]
    }
    visor.displayHombre.value = dibujo
 }
@@ -68,7 +73,7 @@ function NuevaLetra(visor, letra)
    colNueva++
 }
 
-function Juega(visor, letra)
+function JugandoLaVaina(visor, letra)
 {
    //comprueba si esta jugando
    if (jugando)
@@ -80,26 +85,26 @@ function Juega(visor, letra)
       var acierto = DibujaLetra(visor, letra)
       //3. si no acierto, dibuja hombre
       if (!acierto)
-         DibujaHombre(visor, ++partes)
+         DibujaHombrePalo(visor, ++partesMuñeco)
         //4. comprueba si fin
-      if (partes == 9)
-         FinJuego(false)
+      if (partesMuñeco == 6)
+         laMacaste(false)
       else if (CompruebaPalabra(visor))
-         FinJuego(true)
+         laMacaste(true)
    } else
    {
       alertify.alert("ALERTAAAAA","Pulsa Juego nuevo para comenzar\nuna partida nueva.").set('label', 'Aceptar')
    }
 }
 
-function IniciaJuego(visor)
+function IniciandoJuegoAhorcado(visor)
 {
    //inicializa visor y variables globales
    jugando = true
-   partes = 0
+   partesMuñeco = 0
    colNueva = 0
    ObtienePalabra()
-   DibujaHombre(visor, partes)
+   DibujaHombrePalo(visor, partesMuñeco)
    visor.displayPalabra.value = ""
    for (var x = 0; x < palabra.length; x++)
    visor.displayPalabra.value += "_ "
@@ -120,18 +125,21 @@ function CompruebaPalabra(visor)
    return fin
 }
 
-function FinJuego(resultado) {
-     //indica que si se ha perdido o ganado
-     var solucion = ""
-     jugando = false 
-     if (resultado) {
-        document.visor.ganadas.value++
-        alertify.alert("Acertaste !").set('label', 'Aceptar')
-     } else {
-       document.visor.perdidas.value++
-       //construye la palabra solucion
-       for (var x = 0; x < palabra.length; x++)
-          solucion += palabra[x]
-       alertify.alert("ALERTAAAAAA", "ANIMAAAALLLLL, \n La palabra era: " + solucion).set('label', 'Aceptar')
-     }
-  }
+function laMacaste(resultado)//indica que si se ha perdido o ganado
+{
+   var solucion = ""
+   jugando = false 
+   if (resultado)
+   {
+      document.visor.ganadas.value++
+      alertify.alert("Acertaste !").set('label', 'Aceptar')
+   } 
+   else 
+   {
+      document.visor.perdidas.value++
+       //construye la palabra seleccionada 
+      for (var x = 0; x < palabra.length; x++)
+      solucion += palabra[x]
+      alertify.alert("ALERTAAAAAA", "Buen intento, \n La palabra era: " + solucion).set('label', 'Aceptar')
+   }
+}
